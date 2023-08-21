@@ -8,6 +8,12 @@
     <hr>
 
     <h3>Товары</h3>
+
+    <form action="/" method="get">
+        Поиск по названию: <input type="text" name="title"> <br>
+        <input type="submit" value="Поиск" />
+    </form>
+
     <#list products as product>
         <div>
             <p>
@@ -15,7 +21,7 @@
             </p>
         </div>
         <#else>
-            Товаров нет
+            <b>Товаров нет</b>
     </#list>
     <hr>
 
