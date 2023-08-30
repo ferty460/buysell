@@ -3,7 +3,6 @@
 <head>
     <title>BUYSELL</title>
 </head>
-<>
     <h1>BUYSELL</h1>
     <hr>
     <#if user.email??>
