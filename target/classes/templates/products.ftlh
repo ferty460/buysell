@@ -3,7 +3,7 @@
 <head>
     <title>BUYSELL</title>
 </head>
-<body>
+<>
     <h1>BUYSELL</h1>
     <hr>
     <#if user.email??>
@@ -12,6 +12,9 @@
             <input type="hidden" name="_csrf" value="${_csrf.token}">
             <input type="submit" value="Выйти">
         </form>
+        <#if user.isAdmin()>
+            <a href="/admin">Панель администратора</a>
+        </#if>
     <#else>
         <a href="/login">Войти</a>
     </#if>
